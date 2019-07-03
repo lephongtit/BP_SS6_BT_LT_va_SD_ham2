@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       function checkNum(num){
+           if (num<0) {
+               return false;
+           }
+              return Number.isFinite(num);
+       }
+       var num = parseInt(prompt("Nhập vào 1 kí tự:"));
+       if (checkNum(num)){
+           alert("Bạn đã nhập số nguyên dương!");
+       } else {
+           alert("Không phải số nguyên dương!");
+       }
+   </script>
+</body>
+</html>

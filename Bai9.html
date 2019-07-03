@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let arr=[prompt("nhập kí tự 1:"),prompt("nhập kí 2:"),prompt("nhập kí tự 3:")];
+      let kitu=prompt("kí tự cần tìm:");
+      function demKiTu(arr,kitu) {
+          let solan = 0;
+          for (let i=0;i<arr.length;i++){
+              if (kitu==arr[i]){
+                  solan++;
+              }
+          }
+          if (solan==0){
+              return -1;
+          }
+          return solan;
+      }
+      alert("solan: "+demKiTu(arr,kitu));
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      function checkNum(num){
+          return Number.isFinite(num);
+      }
+     var num = parseInt(prompt("Nhập vào 1 kí tự:"));
+      if (checkNum(num)){
+          alert("Bạn đã nhập số!")
+      } else {
+          alert("Bạn đã nhập kí tự khác số!")
+      }
+  </script>
+</body>
+</html>
